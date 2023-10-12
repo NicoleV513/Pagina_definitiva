@@ -1,0 +1,623 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'open sans';
+    background: rgb(16, 11, 11);
+    color:#fff;
+}
+
+.contenedor{
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #DD1717;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #d62445;
+    background: -webkit-linear-gradient(to right,hsla(0, 0%, 0%, 0.811), hsla(0, 92%, 47%, 0.39)), url(../imagenes/portada.jpeg);
+    background: linear-gradient(to right,hsla(0, 0%, 0%, 0.811), hsla(0, 92%, 47%, 0.39)), url(../imagenes/portada.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Sobre Nosotros*/
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about{
+    width: 50%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #DD1717;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Galeria de juegos*/
+
+.destacados{
+    background: rgb(16, 11, 11);
+}
+
+.galeria-juegos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-port{
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.hover-galeria{
+    position: absolute;
+    bottom: 20;
+    height: 0;
+    width: 250px;
+    overflow: hidden;
+    top: 0;
+    background: hsla(0, 0%, 0%, 0.256);
+    transition: transform .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 150px;
+    height: 150px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    height: 100%;
+}
+
+.imagen-port:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(233, 217, 217, 0.5);
+}
+
+.contenedor-footer{
+    background: #ec0a0a;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-foo{
+    padding: 10px;
+}
+
+
+.redes_sociales img{
+    width: 50px;
+    height: 50px;
+}
+
+/*Página de Consolas*/
+
+body#consolas header{
+    width: 100%;
+    height: 150px;
+    background: #d62445;
+    background: -webkit-linear-gradient(to right,hsla(0, 84%, 54%, 0.811), hsla(0, 93%, 39%, 0.39));
+    background: linear-gradient(to right,hsla(0, 84%, 54%, 0.811), hsla(0, 93%, 39%, 0.39));
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body#consolas .wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+body#consolas main h1{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Línea del tiempo*/
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.event{
+    position: relative;
+    padding: 20px;
+    border-left: 2px solid #ec0a0a;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.event img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    float: left;
+    box-shadow: 0 0 6px 0 rgba(233, 217, 217, 0.5);
+}
+
+.event h2 {
+    display: flex;
+    font-size: 30px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.event p {
+    margin-bottom: 0;
+}
+
+.event::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Cultura*/
+
+.imagen-cultura{
+    width: 35%;
+    height: 35%;
+    padding: 20px,10px,20px,20px;
+    top: 0;
+}
+
+.galeria-eventos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-port2{
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.imagen-port2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.hover-galeria2{
+    position: absolute;
+    bottom: 20;
+    height: 0;
+    width: 100px;
+    overflow: hidden;
+    top: 0;
+    background: hsla(0, 0%, 0%, 0.256);
+    transition: transform .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria2 img{
+    width: 100px;
+    height: 100px;
+}
+
+.hover-galeria2 p{
+    color: #fff;
+}
+
+.imagen-port2:hover .hover-galeria2{
+    height: 100%;
+}
+
+.imagen-port2:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(233, 217, 217, 0.5);
+}
+
+/*Personajes*/
+
+.Mario{
+    display: flex;
+    height: 300px;
+}
+
+.Mario img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
+.Mario p{
+    right: 0;
+    text-align-last: right;
+}
+
+.Peach{
+    display: flex;
+    height: 300px;
+}
+
+.Peach img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    padding: 20px;
+}
+
+.Peach p{
+    left: 0;
+    text-align-last: left;
+}
+
+.Link{
+    display: flex;
+    height: 300px;
+}
+
+.Link img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
+.Link p{
+    right: 0;
+    text-align-last: right;
+}
+
+.Zelda{
+    display: flex;
+    height: 300px;
+}
+
+.Zelda img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    padding: 20px;
+}
+
+.Zelda p{
+    left: 0;
+    text-align-last: left;
+}
+
+.Orni{
+    display: flex;
+    height: 300px;
+}
+
+.Orni img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
+.Orni p{
+    right: 0;
+    text-align-last: right;
+}
+
+/*Consolas*/
+.Nes{
+    display: flex;
+    height: 300px;
+}
+
+.Nes img{
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+
+.Nes p{
+    right: 0;
+    text-align-last: right;
+}
+
+.Snes{
+    display: flex;
+    height: 300px;
+}
+
+.Snes img{
+    width: 300px;
+    height: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.Snes p{
+    left: 0;
+    text-align-last: left;
+}
+
+.N64{
+    display: flex;
+    height: 300px;
+}
+
+.N64 img{
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+
+.N64 p{
+    right: 0;
+    text-align-last: right;
+}
+
+.Switch{
+    display: flex;
+    height: 300px;
+}
+
+.Switch img{
+    width: 350px;
+    height: 350px;
+    float: right;
+    padding: 20px;
+}
+
+.Para_todos p{
+    left: 0;
+    text-align-last: left;
+}
+
+.Para_todos{
+    display: flex;
+    height: 300px;
+}
+
+.Para_todos img{
+    width: 400px;
+    height: 350px;
+    float: right;
+    padding: 20px;
+}
+
+.Switch p{
+    left: 0;
+    text-align-last: left;
+}
+
+.clearfix::after{
+    content: "";
+    clear:both;
+    display:table;
+}
+
+.contenedorsito{
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedorsito p{
+    margin: 50px;
+    text-align: justify;
+}
+
+.cronologia{
+    width: 100%;
+    height: 100%;
+}
+
+/*Guias*/
+.imagen-guia{
+    width: 100%;
+}
+
+/*Formulario*/
+
+.formulario-croquis {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 0,auto;
+    align-items: center;
+    padding: auto;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #DD1717;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #DD1717;
+}
+
+.Formulario-contacto{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Estilos para los botones de login y registro */
+.boton-login,
+.boton-registro {
+    background-color: #DD1717;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .botones-header {
+    text-align: center;
+} */
+
+.boton-login,
+.boton-registro {
+    display: inline-block;
+}
+
+
+
+
+
+ 
+
