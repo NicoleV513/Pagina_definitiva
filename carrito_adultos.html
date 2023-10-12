@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="CSS/carrito.CSS" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="carrito_consolas.html">Consolas</a>
+            <a href="carrito_accesorios.html">Accesorios</a>
+            <a href="carrito_para_todos.html">Juegos para Todos</a>
+            <a href="carrito_adolescentes.html">Juegos para Adolescentes</a>
+            <a href="carrito_adultos.html">Juegos para Adultos</a>
+            <a href="index.html">Cerrar Sesión</a>
+
+        </nav>
+        <section class="textos-header">
+            <h1>¡Diviertete en Grande con Nuestros Videojuegos Mature!</h1>
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-0.00,50.10 C203.98,130.94 344.66,-24.37 500.29,50.10 L500.29,150.33 L-0.00,150.33 Z"
+                        style="stroke: none; fill: rgb(16, 11, 11);"></path>
+                </svg></div>
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-cart">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Zapatos Nike</p>
+                                <span class="precio-producto-carrito">$80</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="icon-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacío</p>
+                </div>
+            </div>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_794513-MCO43156700692_082020-O.webp" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Bayonetta 2</h2>
+                <h3>¡Bayonetta 2 es pura acción y estilo! Combina combates épicos con una heroína carismática y una
+                    historia envolvente.</h3>
+                <p class="price">$297300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/comprar-botw.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>The Legend of Zelda: Breath of the Wild</h2>
+                <h3>Embárcate en una epopeya en "The Legend of Zelda: Breath of the Wild". Explora un mundo abierto
+                    lleno de secretos y aventuras.</h3>
+                <p class="price">$328900</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.blogs.es/84a6a8/fur_uqax0asuiof/450_1000.webp" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Resident Evil 4</h2>
+                <h3>"Resident Evil 4" redefine el horror de supervivencia. Enfréntate a hordas de zombis en esta intensa
+                    experiencia de terror.</h3>
+                <p class="price">$278200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_834780-MLA53885067002_022023-O.webp" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>The Witcher 3: Wild Hunt</h2>
+                <h3>"The Witcher 3: Wild Hunt" ofrece un mundo abierto inmenso, historias profundas y monstruos que
+                    cazar. Un juego de rol épico.</h3>
+                <p class="price">$151000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_843180-MCO54305242736_032023-O.webp" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Dark Souls Remastered</h2>
+                <h3>Supera desafíos en "Dark Souls Remastered". Un juego infame por su dificultad, pero también amado
+                    por su profundidad y atmósfera.</h3>
+                <p class="price">$279000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_806371-MCO31184204246_062019-O.webp" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Wolfenstein II: The New Colossus</h2>
+                <h3>En "Wolfenstein II: The New Colossus", lucha contra nazis en un emocionante juego de disparos con
+                    una historia cautivadora. ¡La resistencia cuenta contigo!</h3>
+                <p class="price">$172000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>

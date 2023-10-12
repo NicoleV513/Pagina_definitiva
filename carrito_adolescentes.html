@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="CSS/carrito.CSS" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="carrito_consolas.html">Consolas</a>
+            <a href="carrito_accesorios.html">Accesorios</a>
+            <a href="carrito_para_todos.html">Juegos para Todos</a>
+            <a href="carrito_adolescentes.html">Juegos para Adolescentes</a>
+            <a href="carrito_adultos.html">Juegos para Adultos</a>
+            <a href="index.html">Cerrar Sesión</a>
+
+        </nav>
+        <section class="textos-header">
+            <h1>¡Diviertete en Grande con Nuestros Videojuegos categoría T!</h1>
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-0.00,50.10 C203.98,130.94 344.66,-24.37 500.29,50.10 L500.29,150.33 L-0.00,150.33 Z"
+                        style="stroke: none; fill: rgb(16, 11, 11);"></path>
+                </svg></div>
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-cart">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Zapatos Nike</p>
+                                <span class="precio-producto-carrito">$80</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="icon-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacío</p>
+                </div>
+            </div>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="imagenes/comprar-smash.jfif" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Super Smash Bros. Ultimate</h2>
+                <h3>¡Reúne a tus personajes favoritos en "Super Smash Bros. Ultimate". Luchas épicas y diversión
+                    multijugador te esperan.</h3>
+                <p class="price">$328600</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://assets1.ignimgs.com/2019/07/17/fire-emblem-three-houses---button-fin-1563322090834.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Fire Emblem: Three Houses</h2>
+                <h3>"Fire Emblem: Three Houses" es una aventura estratégica con una narrativa profunda. Dirige tu propia
+                    casa y elige tu destino.</h3>
+                <p class="price">$280000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Xenoblade_Chronicles_2.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Xenoblade Chronicles 2</h2>
+                <h3>Explora mundos enormes y épicas batallas en "Xenoblade Chronicles 2". Una historia envolvente y
+                    personajes carismáticos te esperan.</h3>
+                <p class="price">$335054</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.etsystatic.com/12175780/r/il/ddd807/1993001450/il_1080xN.1993001450_4snn.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Astral Chain</h2>
+                <h3>"Astral Chain" combina acción y ciencia ficción en una experiencia única. Controla dos personajes en
+                    esta emocionante aventura.</h3>
+                <p class="price">$273500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://falabella.scene7.com/is/image/FalabellaCO/4193217_1?wid=800&hei=800&qlt=70"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Luigi's Mansion 3</h2>
+                <h3>Únete a Luigi en "Luigi's Mansion 3" para rescatar a tus amigos de fantasmas espeluznantes en un
+                    divertido juego de acción y puzles.</h3>
+                <p class="price">$266900</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_896737-MCO50961958245_082022-O.webp" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>The Legend of Zelda: Twilight Princess</h2>
+                <h3>Revive la magia de "The Legend of Zelda: Twilight Princess". Explora Hyrule y enfréntate a desafíos
+                    épicos en esta aventura inolvidable.</h3>
+                <p class="price">$250500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>

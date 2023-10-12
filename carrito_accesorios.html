@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="CSS/carrito.CSS" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="carrito_consolas.html">Consolas</a>
+            <a href="carrito_accesorios.html">Accesorios</a>
+            <a href="carrito_para_todos.html">Juegos para Todos</a>
+            <a href="carrito_adolescentes.html">Juegos para Adolescentes</a>
+            <a href="carrito_adultos.html">Juegos para Adultos</a>
+            <a href="index.html">Cerrar Sesión</a>
+
+        </nav>
+        <section class="textos-header">
+            <h1>¡Comodidad y Ergonomía!</h1>
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-0.00,50.10 C203.98,130.94 344.66,-24.37 500.29,50.10 L500.29,150.33 L-0.00,150.33 Z"
+                        style="stroke: none; fill: rgb(16, 11, 11);"></path>
+                </svg></div>
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-cart">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Zapatos Nike</p>
+                                <span class="precio-producto-carrito">$80</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="icon-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacío</p>
+                </div>
+            </div>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="imagenes/control1.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Skullcandy S2imy-m685 Inkd Plus</h2>
+                <h3>Hermoso adaptador para controles joystick en material plastico e infrarojo, para hacerte vivir la
+                    experiencia de un verdadero disparo</h3>
+                <p class="price">$173900</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/control2.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Control Pro Super Smash Bros</h2>
+                <h3>Vive la experiencia de la consola con un control gamer personalizado con temática de Smash Bros y sé
+                    la envídia de tus amigos</h3>
+                <p class="price">$169900</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/control3.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Soporte Pared Base Nintendo Switch Dock +2 Soporte Controles</h2>
+                <h3>¿No tienes dónde dejar tu consola para que luzca?, este soporte es para ti! en un elegante material
+                    plástico</h3>
+                <p class="price">$90.000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/control4.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Control joystick inalámbricor the legend of zelda</h2>
+                <h3>El heroe del tiempo merece una buena herramienta, con este control personalizado con the legend of
+                    zelda en material plástico maciso podrás salvar el reino de hyrule</h3>
+                <p class="price">$164.900</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/accesorio2.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>OIVO for Switch/Switch OLED Grip Holder Adjustable Stand Handle Asymmetrical</h2>
+                <h3>Guarda todos tus juegos en un lugar seguro, con este hermoso soporte en material plástico adaptado al tamaño de tu consola switch</h3>
+                <p class="price">$30000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/accesorio3.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>luxury Carrying Backpack for Nintendo Switch</h2>
+                <h3>Guarda tu consola en un lugar seguro, con este morral antifluido 50cm x 40cm</h3>
+                <p class="price">$80000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>

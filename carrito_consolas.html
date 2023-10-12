@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tienda</title>
+	<link rel="stylesheet" href="CSS/carrito.CSS" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="carrito_consolas.html">Consolas</a>
+			<a href="carrito_accesorios.html">Accesorios</a>
+			<a href="carrito_para_todos.html">Juegos para Todos</a>
+			<a href="carrito_adolescentes.html">Juegos para Adolescentes</a>
+			<a href="carrito_adultos.html">Juegos para Adultos</a>
+			<a href="index.html">Cerrar Sesión</a>
+
+		</nav>
+		<section class="textos-header">
+			<h1>¡Compra la consola de tus sueños!</h1>
+			<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+					preserveAspectRatio="none" style="height: 100%; width: 100%;">
+					<path d="M-0.00,50.10 C203.98,130.94 344.66,-24.37 500.29,50.10 L500.29,150.33 L-0.00,150.33 Z"
+						style="stroke: none; fill: rgb(16, 11, 11);"></path>
+				</svg></div>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="icon-cart">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="icon-close">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+	</header>
+	<div class="container-items">
+		<div class="item">
+			<figure>
+				<img src="imagenes/switch.png" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Nintendo Switch</h2>
+				<h3>La Nintendo Switch te ofrece diversión en casa y en movimiento. Con su versatilidad y juegos, es la
+					elección perfecta para todos.</h3>
+				<p class="price">$1948000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="imagenes/nintedo_3ds.png" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Nintendo 3ds</h2>
+				<h3>La Nintendo 3DS es una consola portátil que ofrece una experiencia de juego 3D sin necesidad de
+					gafas especiales.</h3>
+				<p class="price">$422913</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="imagenes/wii_u.png" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Nintendo Wii U</h2>
+				<h3>La Wii U es una consola de videojuegos de Nintendo que combina juegos tradicionales con una
+					experiencia de juego asimétrica a través del control GamePad.</h3>
+				<p class="price">$1224300</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="imagenes/N64-Console-Set.png" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Nintendo 64</h2>
+				<h3>El Nintendo 64 (N64) es una consola icónica de Nintendo que revolucionó los juegos en 3D y lanzó
+					títulos legendarios como Super Mario 64 y The Legend of Zelda: Ocarina of Time.</h3>
+				<p class="price">$300760</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="imagenes/SNES-Mod1-Console-Set.png" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Nintendo Super NES</h2>
+				<h3>La Super Nintendo Entertainment System (SNES) es una consola clásica de 16 bits de Nintendo, famosa
+					por juegos icónicos como Super Mario World y The Legend of Zelda: A Link to the Past.</h3>
+				<p class="price">$378967</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="imagenes/switch_oled.png" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Nintendo Switch OLED</h2>
+				<h3>La Nintendo Switch OLED lleva tus juegos al siguiente nivel con su impresionante pantalla OLED para
+					una experiencia de juego inolvidable. ¡Obtén la tuya ahora!</h3>
+				<p class="price">$1904562</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script src="js/carrito.js"></script>
+</body>
+
+</html>
